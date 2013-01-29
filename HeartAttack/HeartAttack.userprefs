@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Class/RankingClass.cs">
+    <Files>
+      <File FileName="Assets/Class/OptionsClass.cs" Line="23" Column="24" />
+      <File FileName="Assets/Class/StartGameClass.cs" Line="19" Column="26" />
+      <File FileName="Assets/Class/RankingClass.cs" Line="16" Column="68" />
+      <File FileName="Assets/Class/VeinClass.cs" Line="22" Column="47" />
+      <File FileName="Assets/Class/AtaulfoClass.cs" Line="96" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

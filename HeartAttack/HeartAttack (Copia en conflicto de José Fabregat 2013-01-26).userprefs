@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Class\PumpkinClass.cs">
+    <Files>
+      <File FileName="Assets\Class\VeinClass.cs" Line="1" Column="1" />
+      <File FileName="Assets\Class\ObstacleClass.cs" Line="1" Column="1" />
+      <File FileName="Assets\Class\OxigenFountain.cs" Line="11" Column="3" />
+      <File FileName="Assets\Class\AtaulfoClass.cs" Line="11" Column="17" />
+      <File FileName="Assets\Class\CholesterolClass.cs" Line="8" Column="51" />
+      <File FileName="Assets\Class\GreenSlimeClass.cs" Line="11" Column="1" />
+      <File FileName="Assets\Class\PumpkinClass.cs" Line="8" Column="60" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
