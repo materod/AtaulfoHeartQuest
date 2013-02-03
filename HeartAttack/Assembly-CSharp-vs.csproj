@@ -52,6 +52,7 @@
      <Compile Include="Assets\Class\CholesterolClass.cs" />
      <Compile Include="Assets\Class\GasClass.cs" />
      <Compile Include="Assets\Class\GreenSlimeClass.cs" />
+     <Compile Include="Assets\Class\KongregateClass.cs" />
      <Compile Include="Assets\Class\ObstacleClass.cs" />
      <Compile Include="Assets\Class\OptionsClass.cs" />
      <Compile Include="Assets\Class\OxigenFountain.cs" />

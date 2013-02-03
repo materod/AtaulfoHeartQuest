@@ -15,21 +15,8 @@ public class RankingClass : MonoBehaviour {
 	void Start () {
 		endSleep = false;
 		
-		Application.ExternalEval(
-				"if(typeof(kongregateUnitySupport) != 'undefined'){" +
-				" kongregateUnitySupport.initAPI('"+this.gameObject.name+"', 'OnKongregateAPILoaded');" +
-				"};"
-		);
-		
-		/*for(int i=0; i<HighScores.Length; i++)
-		{
-			if(AtaulfoClass.Score > HighScores[i])
-			{
-				ScoreNames[i] = AtaulfoClass.PlayerName;
-				HighScores[i] = (int)AtaulfoClass.Score;
-				break;
-			}
-		}*/
+		int score = (int) AtaulfoClass.Score;
+		KongregateClass.SubmitStatistic("Score", score);	
 		
 		startTime = Time.time;
 		
@@ -65,25 +52,5 @@ public class RankingClass : MonoBehaviour {
 		
 		GUI.Label(new Rect((float)Screen.width-220,Screen.height-380,100,20), "Score: "+(int)AtaulfoClass.Score, rankingStyle);
 		
-		// Score labels left
-		/*GUIStyle scoreStyleLeft = new GUIStyle();
-		scoreStyleLeft.font = scoreFont;
-		scoreStyleLeft.fontSize = 48;
-		scoreStyleLeft.normal.textColor = Color.white;
-		scoreStyleLeft.alignment = TextAnchor.UpperRight;
-		
-		int iniPos = Screen.height-380;
-		
-		for(int i=0; i < ScoreNames.Length; i++)
-		{
-			GUI.Label(new Rect(Screen.width-120, iniPos + (i * 60),100,20), (i+1)+". "+ScoreNames[i]+".............................."+HighScores[i], scoreStyleLeft);
-		}*/
-	}
-	
-	void OnKongregateAPILoaded(string userInfoString){
-		
-		int score = (int) AtaulfoClass.Score;
-		
-		Application.ExternalCall("kongregate.stats.submit","Score", score);	
 	}
 }
