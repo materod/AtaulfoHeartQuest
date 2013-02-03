@@ -11,17 +11,11 @@ public class OptionsClass : MonoBehaviour {
 	public static int AtaulfoLateralSpeedSlow = 30;	// Moving speed of Ataulfo with a powerdown
 	public static int AtaulfoInitialOxygen = 9;		// Life of Ataulfo
 	public static int AtaulfoOxygenExpireTime=5;    // Ataulfo loses oxygen in this time
-	public static float ObstacleAngleMax = 90.0f;	// Changes the maximum angle of obstacles in veins
+	public static float ObstacleAngleMax = 67.0f;	// Changes the maximum angle of obstacles in veins
 	public static float ObstacleRateMin = 3.0f;		// Obstacle min rate spawning
 	public static float ObstacleRateMax = 6.0f;		// Obstacle min rate spawning
 	public static float TimeToResetState = 1.0f;		// Time to reset a powerup or powerdown
 	
-	// Kongregate
-	public static bool IsKongregate = false;
-	public static int UserId = 0;
-	public static string Username = "Ataulfo";
-	public static string GameAuthToken = "";
-
 	// Use this for initialization
 	void Start () {
 	

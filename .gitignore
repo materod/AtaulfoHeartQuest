@@ -1,5 +1,7 @@
 *.bmp
 *.BMP
+*.jpg
+*.JPG
 *.psd
 *.PSD
 *.tif
@@ -8,6 +10,10 @@
 *.TIFF
 *.pdf
 *.PDF
+*.png
+*.PNG
+*.tga
+*.TGA
 *.ttf
 *.TTF
 *.ZIP
@@ -39,6 +45,8 @@
 *.raw
 *.wav
 *.WAV
+*.mp3
+*.MP3
 *.wave
 *.MOV
 *.mov

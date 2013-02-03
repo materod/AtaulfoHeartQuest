@@ -9,10 +9,19 @@ public class RankingClass : MonoBehaviour {
 	private int[] HighScores = {999, 500, 400, 300, 200, 100};
 	
 	private float startTime = 0;
+	private bool endSleep = false;
 
 	// Update highscores
 	void Start () {
+		endSleep = false;
 		int score = (int) AtaulfoClass.Score;
+		
+		Application.ExternalEval(
+				"if(typeof(kongregateUnitySupport) != 'undefined'){" +
+				" kongregateUnitySupport.initAPI('MyUnityObject', 'OnKongregateAPILoaded');" +
+				"};"
+		);
+		
 		Application.ExternalCall("kongregate.stats.submit","Score", score);
 		
 		/*for(int i=0; i<HighScores.Length; i++)
@@ -32,7 +41,7 @@ public class RankingClass : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.anyKeyDown){
+		if(Input.anyKeyDown && endSleep){
 			Application.LoadLevel("GameStart");
 		}
 	}
@@ -41,6 +50,7 @@ public class RankingClass : MonoBehaviour {
 	private IEnumerator Sleep(float delay)
 	{
    		yield return new WaitForSeconds(delay);
+		endSleep = true;
 	}
 	
 	// Update GUI

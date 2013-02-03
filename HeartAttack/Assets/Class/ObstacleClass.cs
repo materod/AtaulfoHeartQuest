@@ -5,6 +5,7 @@ public class ObstacleClass : MonoBehaviour {
 	
 	private static float ZPosToDestroy = -15.0f;
 	public AtaulfoClass Ataulfo;
+	public AudioClip sound;
 	// Use this for initialization
 	void Start () {
 	}
@@ -22,7 +23,12 @@ public class ObstacleClass : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider obj) {
 	if (obj.gameObject.name == "Ataulfo") {
-			ActionCollide();
+			ActionCollide();			
+			if (sound)								//in case the obstacle has an audio play it when collide with ataulfo
+			{
+				audio.clip=sound;
+				audio.Play();
+			}
 		}
 	}
 	
