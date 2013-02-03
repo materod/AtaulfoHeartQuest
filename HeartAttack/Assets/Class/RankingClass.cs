@@ -14,15 +14,12 @@ public class RankingClass : MonoBehaviour {
 	// Update highscores
 	void Start () {
 		endSleep = false;
-		int score = (int) AtaulfoClass.Score;
 		
 		Application.ExternalEval(
 				"if(typeof(kongregateUnitySupport) != 'undefined'){" +
-				" kongregateUnitySupport.initAPI('MyUnityObject', 'OnKongregateAPILoaded');" +
+				" kongregateUnitySupport.initAPI('"+this.gameObject.name+"', 'OnKongregateAPILoaded');" +
 				"};"
 		);
-		
-		Application.ExternalCall("kongregate.stats.submit","Score", score);
 		
 		/*for(int i=0; i<HighScores.Length; i++)
 		{
@@ -81,5 +78,12 @@ public class RankingClass : MonoBehaviour {
 		{
 			GUI.Label(new Rect(Screen.width-120, iniPos + (i * 60),100,20), (i+1)+". "+ScoreNames[i]+".............................."+HighScores[i], scoreStyleLeft);
 		}*/
+	}
+	
+	void OnKongregateAPILoaded(string userInfoString){
+		
+		int score = (int) AtaulfoClass.Score;
+		
+		Application.ExternalCall("kongregate.stats.submit","Score", score);	
 	}
 }
